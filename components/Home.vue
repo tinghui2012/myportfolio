@@ -54,7 +54,7 @@
                     <!-- <li><a href="#education" class="link-education">EDUCATION</a></li>
                             <li><a href="#experiences" class="link-experiences">EXPERIENCES</a></li>
                             <li><a href="#projects" class="link-projects">PROJECTS</a></li> -->
-                    <li><a href="#dance" class="link-dance">DANCE</a></li>
+                    <li><a href="#projects" class="link-projects">PROJECTS</a></li>
                     <li><a href="#random" class="link-random">RANDOM</a></li>
                     <li><a href="#contact" class="link-contact">CONTACT</a></li>
                 </ul>
@@ -87,7 +87,7 @@
         </section>
         <section class="about">
             <div class="blurb">
-                <h2>Learner. Explorer. Dancer.</h2>
+                <h2>Learner. Explorer. Creator.</h2>
                 <p>I'm an undergrad at Columbia University in NYC studying computer science and linguistics. I am from San Francisco Bay Area and Shanghai. I love traveling, reading, dancing, and cooking.
                 </p> 
             </div>
@@ -101,10 +101,10 @@
         <section class="projects">
             <h2>PROJECTS</h2>
         </section> -->
-        <section class="dance">
+        <section class="projects">
             <div class="spacer"></div>
             <div class="sectiondividerline"></div>
-            <h1>dance</h1>
+            <h1>projects</h1>
             <div class="sectiondividerline"></div>
             <div class="spacer"></div>
         </section>
