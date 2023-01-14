@@ -38,8 +38,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&
         family=Dancing+Script:wght@600&
         family=Lemonada:wght@600&
-        family=Roboto+Mono:wght@200;500&display=swap" rel="stylesheet"></link>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;1000&display=swap" rel="stylesheet"></link>
+        family=Roboto+Mono:wght@200;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;1000&display=swap" rel="stylesheet">
 
         <div class="navbar">
             <div class="navbaritems">
@@ -193,7 +193,7 @@
     }
     .navbar {
         min-width: 900px;
-        z-index: 1;
+        z-index: 10;
         flex-direction: column;
         position: sticky;
         top: 0px;
