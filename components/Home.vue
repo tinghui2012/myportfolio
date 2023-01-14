@@ -62,7 +62,9 @@
             <div class="navdividerline"></div>
         </div>
         <section class="landing">
-            <!-- <img class="mainimg" ref="background" src="crbhamiltonsteps.jpg"> -->
+            <div>
+                <img class="bgimg" ref="background" src="crbhamiltonsteps.jpg">
+            </div>
             <div class="hello" ref="first">
                 <h1>Hello! I am Christine Li.</h1>
             </div>
@@ -85,7 +87,7 @@
         </section>
         <section class="about">
             <div class="blurb">
-                <h2>Learner. Researcher. Dancer.</h2>
+                <h2>Learner. Explorer. Dancer.</h2>
                 <p>I'm an undergrad at Columbia University in NYC studying computer science and linguistics. I am from San Francisco Bay Area and Shanghai. I love traveling, reading, dancing, and cooking.
                 </p> 
             </div>
@@ -100,18 +102,73 @@
             <h2>PROJECTS</h2>
         </section> -->
         <section class="dance">
-            <h1>DANCE</h1>
+            <div class="spacer"></div>
+            <div class="sectiondividerline"></div>
+            <h1>dance</h1>
+            <div class="sectiondividerline"></div>
+            <div class="spacer"></div>
         </section>
         <section class="random">
+            <div class="spacer"></div>
+            <div class="sectiondividerline"></div>
             <h1>some random things</h1>
+            <div class="sectiondividerline"></div>
+            <div class="spacer"></div>
+            <div class="lists">
+                <h3>reads (2023 bucket list)</h3>
+            <p><br>
+            <div style="padding-left: 20px;">
+                <ul class="plist" style="list-style-type: circle;">
+                    <li>The Light We Carry (Obama)</li>
+                    <li>The Brothers Karamazov (Dostoevsky)</li>
+                    <li>The Color Purple (Walker)</li>
+                    <li>Candide (Voltaire)</li>
+                    <li>Lolita (Nabokov)</li>
+                    <li>The Shape of a Pocket (Berger)</li>
+                    <li>Thus Spoke Zarathustra (Nietzsche)</li>
+                    <li>The Master and Margarita (Bulgakov)</li>
+                    <li>A Tale of Two Cities (Dickens)</li>
+                </ul>
+            </div>
+            </p>
+            </div>
+            <div class="spacer"></div>
+            <div class="lists">
+                <h3>eats (some favorities of mine)</h3>
+            <p><br>
+            <div style="padding-left: 20px;">
+                <ul class="plist" style="list-style-type: circle;">
+                    <li>Out The Door (San Francisco)</li>
+                    <li>Wagas (Shanghai)</li>
+                    <li>Mokbar (NYC)</li>
+                    <li>2A Concept (St. Petersburg)</li>
+                    <li>La Štruk (Zagreb)</li>
+                    <li>MOAK Pancakes (Amsterdam)</li>
+                    <li>Chez Paul (Lyon)</li>
+                    <li>Maison Violette (Avignon)</li>
+                    <li>L'Antica Pizzeria da Michele (Naples)</li>
+                    <li>Klobasarna (Ljubljana)</li>
+                </ul>
+            </div>
+            </p>
+            </div>
         </section>
         <section class="contact">
-            <h1>CONTACT</h1>
+            <div class="spacer"></div>
+            <div class="sectiondividerline"></div>
+            <h1>contact</h1>
+            <div class="sectiondividerline"></div>
+            <div class="spacer"></div>
         </section>
 
         <section class="footer">
-            <a href="https://www.instagram.com/christinelitinghui" target="_blank" id="link">Instagram</a>
-            <a href="https://www.github.com/tinghui2012" target="_blank" id="link">Github</a>
+            <div>
+                <ul class="footerbuttons">
+                    <li><a href="https://www.linkedin.com/in/christine-li-b0456418a/" target="_blank" id="link">LINKEDIN</a></li>
+                    <li><a href="https://www.github.com/tinghui2012" target="_blank" id="link">GITHUB</a></li>
+                    <li><a href="https://www.instagram.com/christinelitinghui" target="_blank" id="link">INSTAGRAM</a></li>
+                </ul>
+            </div>
         </section>
     </div>
 </template>
@@ -135,6 +192,7 @@
         color: #432e36;
     }
     .navbar {
+        min-width: 900px;
         z-index: 1;
         flex-direction: column;
         position: sticky;
@@ -155,7 +213,7 @@
     a:link, a:visited, a:hover, a:active {
         text-decoration: none;
     }
-    .navtabs a:hover, .navtabs a.active {
+    .navtabs a:hover, .navtabs a.active, .footerbuttons a:hover {
         background-color: #a6808c;
         
     }
@@ -214,12 +272,28 @@
         height: 2px;
     }
 
-    .mainimg{
+    .landing {
+        padding: 50px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+    .bgimg{
         width: 100%;
         height: auto;
         top: 0;
         left: 0;
         opacity: 50%;
+        z-index: 0.5;
+        position: absolute;
+    }
+    .hello {
+        position: relative;
+        background-color: rgba(rgb(235, 223, 228), green, blue, 0.5);
+        vertical-align: middle;
+        height: 100vh;
+        text-align: center;
+        padding-top: 20%;
     }
 
     /* .section {
@@ -230,17 +304,25 @@
         top: 50%;
         transform: translate(-50%, -50%);
     } */ */
-    .landing {
-        padding: 0px;
-    }
-    .hello {
-        background-image: url("/crbhamiltonsteps.jpg");
-        height: 70vh;
-    }
     .hello h1 {
         font-size: 40px;
         font-family: 'Roboto Mono', monospace;
         font-weight: 500;
+        position: fixed;
+
+    }
+    section{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .sectiondividerline{
+        background-color: #432e36;
+        height: 2px;
+    }
+    .spacer{
+        height: 10px;
     }
     /* .blurb div {
         background-color: #eee5e9;
@@ -257,21 +339,44 @@
         font-size: 30px;
         margin-bottom: 10px;
         font-family: 'Dancing Script', cursive;
+        font-weight: bold;
     }
-    .section p {
-        font-size: 20px;
+    
+    .lists{
+        padding: 20px;
+    }
+    p {
         font-family: 'Nunito', sans-serif;
+        font-size: 20px;
         line-height: 150%;
     }
 
-    
-    .mainbackgroundphoto{
-        background-image: url(/crbhamiltonsteps.jpg);
-        background-attachment: scroll;
+    .plist{
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        line-height: 175%;
     }
-    section{
-        padding: 50px;
+    .footer{
+        padding-bottom: 50px;
     }
+    .footer a{
+        display: flex;
+        float: left;
+        padding: 15px;
+        /* margin-left: 5px; */
+        color: #432e36;
+        font-family: 'Nunito', sans-serif;
+        width: auto;
+        text-align: right;
+        border: 2px solid #432e36;
+        border-radius: 10px;
+    }
+    .footerbuttons li{
+        font-weight: 300;
+        display: inline-flex;
+        font-size: 15px;
+    }
+
     /* .intro{
         flex-direction: column;
         padding-right: 50px;
